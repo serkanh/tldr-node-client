@@ -33,3 +33,15 @@
 - Search for files with extensions matching ".js":
 
 `ag {{foo}} -G '\.js'`
+
+- Search up to NUM directories deep:
+
+`ag {{foo}} --depth=1`
+
+- Ignore directories whose names match this pattern:
+
+`ag {{foo}} --ignore=node_modules`
+
+- Ignore files whose extensions match this pattern:
+
+`ag {{foo}} --ignore='*json'`
