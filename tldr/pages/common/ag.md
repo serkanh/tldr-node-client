@@ -30,6 +30,6 @@
 
 `ag -g {{foo}}`
 
-- Test:
+- Search for files with extensions matching ".js":
 
-`ag -g {{foo}}`
+`ag {{foo}} -G '\.js'`
