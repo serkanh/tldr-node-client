@@ -1,3 +1,14 @@
+# Making changes to your definitions.
+After changes are made:
+
+1. Zip the tldr repo:
+`npm run zip`
+2. Push it to your fork
+`git push origin master`
+3. Update your cache
+`tldr --update`
+
+
 # tldr-node-client
 
 [![NPM version][npm-image]][npm-url]
@@ -145,18 +156,18 @@ fpath = (my/completions $fpath)
 
 #### Installation Issues
 
-- If you are trying to install as non-root user (`npm install -g tldr`) and get something like - 
- 
+- If you are trying to install as non-root user (`npm install -g tldr`) and get something like -
+
  ```
  Error: EACCES: permission denied, access '/usr/local/lib/node_modules/tldr'
  ```
- 
+
  Then most probably your npm's default installation directory has improper permissions. You can resolve it by clicking [here](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
- 
-- If you are trying to install as a root user (`sudo npm install -g tldr`) and get something like - 
+
+- If you are trying to install as a root user (`sudo npm install -g tldr`) and get something like -
 
 ```
-as root -> 
+as root ->
 gyp WARN EACCES attempting to reinstall using temporary dev dir "/usr/local/lib/node_modules/tldr/node_modules/webworker-threads/.node-gyp"
 gyp WARN EACCES user "root" does not have permission to access the dev dir "/usr/local/lib/node_modules/tldr/node_modules/webworker-threads/.node-gyp/8.9.1"
 ```
