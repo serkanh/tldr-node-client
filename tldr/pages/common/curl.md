@@ -34,3 +34,7 @@
 - Pass client certificate and key for a resource, skipping certificate validation:
 
 `curl --cert {{client.pem}} --key {{key.pem}} --insecure {{https://example.com}}`
+
+- To test virtual host configuration without making changes to dns records:
+
+`curl --resolve cafe.example.com:443:34.1.1.1 https://cafe.example.com:443/coffee --insecure`
